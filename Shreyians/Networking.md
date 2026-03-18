@@ -45,7 +45,7 @@
 - .ai , .dev , .app -> niche domains
 
 ## Types of Network
-- ![alt text](image.png)
+ ![alt text](image.png)
 - VPN (Virtual Private Network) = Encrypting own's ip so noone can know use other place IP
 
 ## Toologies
@@ -58,4 +58,49 @@
 
 
 ## OSI MODEL
-- 
+![alt text](image-1.png)
+- Open System Interconnection
+- Developed by ISO company in 1984
+- It is a standard model, not a protocol
+- It is a conceptual framework that defines how data is transferred.
+- Sender -> from Application to Physical (Top to Bottom)
+- Receiver -> from Physical to Application (Bottom to Top)
+
+
+## How Computers Communicate (Client - Server Architecture)
+- Centralized Server
+
+ ### Peer - to - Peer Architecture
+ - DeCentralized Server
+ - All devices are connected to each other but not connected to a centaralized server or any other server.
+ - Security concers are there
+
+ ### Protocols
+ - Set of rules
+ - Roles: - Data Ack, Resend and Ack, Data verification, data sending, Routing
+
+ 1. HTTP and HTTPS
+ - Application protocols
+ - HTTP -> port no. 80
+ - HTTPS is a secured protocol -> HTTP +  Security -> Encryption of data -> Port no. 443
+ - SSL / TSL encrypt the data in HTTPS
+
+ ### IP (Internet Protocol)
+ - Network layer protocol
+ - To tell data its destination
+
+### TCP (Transm)
+- Transport Layer Protocol
+- Data into packets
+- Sequencing
+- Ack
+- Resend if not ACK
+- Eg: Bank, E-commerce sites
+
+### UDP (User Datagram Protocol)
+-  Very fast
+- No sequencing
+- No ACK and resending data
+- Eg: Video and voice call, Live, Games
+
+![alt text](image-2.png)
