@@ -11,7 +11,7 @@ Copy(function() {
 
 console.log("Fourth");
 
-// Output:
+// Output: 
 // "First"
 // "Second"
 // "Fourth"
