@@ -1,5 +1,5 @@
-Python is an Interpreted language (line by line)
-random.random() -> here () is used becuz random (2nd one) is function
+# Python is an Interpreted language (line by line)
+- random.random() -> here () is used becuz random (2nd one) is function
 
 # Python's inner working
 - When python is installed, then along with it a 'Python Virtual Machine' is also installed.

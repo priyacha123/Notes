@@ -1,0 +1,2 @@
+- useCharm() -> gives id
+- useLocation() -> gives search -> that's url mai '?' ke baad ka text
