@@ -32,7 +32,7 @@ func main() {
 
 # Variables
 ## Variable declaration
-- In 3 ways:
+In 3 ways:
 1. Simple reading formt  
 
 ```bash
@@ -55,7 +55,7 @@ var i int = 42
  - Used for importing in other files
 
 ## go.mod file
-- It has 3 main benefits:
+It has 3 main benefits:
 1. Constains prpject name or code hosting provider name
 2. Minimum golang version required
 3. External dependencies
@@ -68,15 +68,28 @@ var i int = 42
 ### GO supports UTF-8 which supports 120000 characters from different languages unlike ASCII
 
 ## GO build command
-- Go provide a fetaure "cross platform single binary executables" which means go can generate 
+- Go provide a fetaure "cross platform single binary executables" which means go can generate binary executable file which can be rum in any OS.
+
 ``` 
 go build filename.go
 ```
+
+- To run a file in window from linux, run this command:
+```
+GOOS=windows GOARCH=amd64 go build
+```
+
+- go build command compiles all the packages and generate binary executable file.
+- It throws out all the result of the compilation and does not store anything  
+- So, when again the build command is runned, it start from scratch and thus <strong> is slower tha "go run" command </strong>
 
 ## GO run command
 ``` 
 go run filename.go
 ```
+- go run command compiles all the packages and directly runs the program without generating binary file.
+
+<strong> It is relatabily faster </strong> becuz it store the result in cache so that when run command is runned, the output comes faster.
 
 ## Imports
 - When there are more than one imports, then imports are grouped into a parenthesized, "factored" import statement.
@@ -88,13 +101,32 @@ import (
 )
 ```
 
-- It can be written as:
+- It can also be written as:
 
 ``` 
 import "fmt"
 import "math"
 ```
 
-<p> But it is good style to use the factored import statement. </p>
+<strong> But it is good style to use the factored import statement. </strong>
+
+## Name Convention
+- Package name cannot be "Capital letter"
+- Package name should be as small as possible (eg: math/rand -> for random no.)
+- Package name should match the folder name
+- Those datatypes whch start with capital letter are accessiblle from outside the packages (eg: math.Pi)
+
+## Functions
+```
+func add(x int, y int) int { // the "int" after ")" is return's type
+	return x + y
+}
+
+// OR 
+
+func add(x, y int) int { // the "int" after ")" is return's type
+	return x + y
+}
+```
 
 
