@@ -18,7 +18,7 @@
 <details close>
 <h1 align="center">Hello in go-lang</h1>
 
-```
+```bash
 package main
 import "fmt"
 
@@ -70,12 +70,13 @@ It has 3 main benefits:
 ## GO build command
 - Go provide a fetaure "cross platform single binary executables" which means go can generate binary executable file which can be rum in any OS.
 
-``` 
+```bash 
 go build filename.go
 ```
 
 - To run a file in window from linux, run this command:
-```
+
+```bash
 GOOS=windows GOARCH=amd64 go build
 ```
 
@@ -84,7 +85,7 @@ GOOS=windows GOARCH=amd64 go build
 - So, when again the build command is runned, it start from scratch and thus <strong> is slower tha "go run" command </strong>
 
 ## GO run command
-``` 
+```bash
 go run filename.go
 ```
 - go run command compiles all the packages and directly runs the program without generating binary file.
@@ -94,7 +95,7 @@ go run filename.go
 ## Imports
 - When there are more than one imports, then imports are grouped into a parenthesized, "factored" import statement.
 
-```
+```bash
 import (
 	"fmt"
 	"math"
@@ -103,7 +104,7 @@ import (
 
 - It can also be written as:
 
-``` 
+```bash
 import "fmt"
 import "math"
 ```
@@ -117,16 +118,20 @@ import "math"
 - Those datatypes whch start with capital letter are accessiblle from outside the packages (eg: math.Pi)
 
 ## Functions
-```
-func add(x int, y int) int { // the "int" after ")" is return's type
-	return x + y
-}
+```bash
+#the "int" after ")" is return's type
+func add(x int, y int) int { 
+	return x + y }
 
-// OR 
+# OR 
 
-func add(x, y int) int { // the "int" after ")" is return's type
-	return x + y
-}
+func add(x, y int) int {
+	return x + y }
+
+# OR 
+
+func add(x, y int) (string, string) {
+	return x , y }
 ```
 
 
