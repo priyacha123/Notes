@@ -85,8 +85,9 @@ app/
 - Enhances link previews on social media platforms.
 - Allows metadata to be generated dynamically based on route parameters or fetched data.
 
+### Note
+
 ```text
-Note: 
 - Metadata obj and generateMetadata cna't be used together in the same route segment
 2. It doesn't work in those pages marked with `use client` directive
 ```

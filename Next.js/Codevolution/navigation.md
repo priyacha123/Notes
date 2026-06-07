@@ -48,6 +48,8 @@ const Articles = async({
 export default Articles
 ``` 
 
+### Note
+
 ```text
 - In a client component you do not need params and searchParams props. you can directly use useParams and useSearchParams hooks to access the dynamic route parameters and query parameters respectively.
 

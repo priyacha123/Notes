@@ -21,3 +21,4 @@
 * To create a Client component, you'll need to add the `"use client"` directive at the top of your component file.
 * While Client components can't perform server-side tasks like reading files, they can use hooks and handle user interactions.
 * Client components are the traditional React components you're already familiar with from previous versions of React.
+
